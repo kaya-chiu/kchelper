@@ -1,0 +1,26 @@
+{
+  "name": "kchelper",
+  "version": "0.1.2",
+  "description": "",
+  "main": "dist/kchelper.min.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rm -rf dist/ && rollup -c",
+    "lint": "eslint --fix \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kaya-chiu",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^2.79.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "dependencies": {
+    "@stylistic/eslint-plugin-js": "^2.1.0",
+    "eslint": "^9.3.0"
+  }
+}
