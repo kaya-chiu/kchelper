@@ -1,10 +1,12 @@
-const { isMobile } = require('./utils')
-
-const getSpaceElement = (event, id) => {
-  if (isMobile(event)) {
-    return kintone.mobile.app.record.getSpaceElement(id)
-  } else {
-    return kintone.app.record.getSpaceElement(id)
+const getSpaceElement = (spaceId, isMobile) => {
+  try {
+    if (isMobile === true) {
+      return kintone.mobile.app.record.getSpaceElement(spaceId)
+    } else {
+      return kintone.app.record.getSpaceElement(spaceId)
+    }
+  } catch (err) {
+    console.error(err)
   }
 }
 
