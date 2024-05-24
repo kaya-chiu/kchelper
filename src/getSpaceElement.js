@@ -6,7 +6,7 @@ const getSpaceElement = (spaceId, isMobile) => {
       return kintone.app.record.getSpaceElement(spaceId)
     }
   } catch (err) {
-    console.error(err)
+    console.error(`kchelper getSpaceElement: ${err}`)
   }
 }
 

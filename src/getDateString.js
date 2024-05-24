@@ -28,7 +28,7 @@ const getDateString = (format, inputDate = new Date()) => {
 
     return dateString
   } catch (error) {
-    console.error(err)
+    console.error(`kchelper getDateString: ${err}`)
   }
 }
 

@@ -6,19 +6,19 @@ const getFieldElement = (fieldCode, isMobile) => {
       return kintone.app.record.getFieldElement(fieldCode)
     }
   } catch (err) {
-    console.error(err)
+    console.error(`kchelper getFieldElement: ${err}`)
   }
 }
 
 const getFieldElements = (fieldCode, isMobile) => {
   try {
     if (isMobile === true) {
-      return kintone.mobile.app.record.getFieldElements(fieldCode)
+      return kintone.mobile.app.getFieldElements(fieldCode)
     } else {
-      return kintone.app.record.getFieldElements(fieldCode)
+      return kintone.app.getFieldElements(fieldCode)
     }
   } catch (err) {
-    console.error(err)
+    console.error(`kchelper getFieldElements: ${err}`)
   }
 }
 

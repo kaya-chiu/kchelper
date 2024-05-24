@@ -1,10 +1,11 @@
 {
   "name": "kchelper",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "",
   "main": "dist/kchelper.min.js",
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "scripts": {
     "dev": "rollup -c -w",
