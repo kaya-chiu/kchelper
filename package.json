@@ -1,10 +1,11 @@
 {
   "name": "kchelper",
-  "version": "1.0.1",
+  "version": "1.2.0",
   "description": "",
   "main": "dist/kchelper.min.js",
   "files": [
     "dist",
+    "kchelper.d.ts",
     "README.md"
   ],
   "scripts": {
