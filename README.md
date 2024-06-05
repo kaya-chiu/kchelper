@@ -88,14 +88,25 @@ Return kintone JavaScript API function according to param `isMobile` to hide the
 | fieldCode | Required | String   | Field code of target field |
 | isMobile  | Optional | Boolean  | Default value: `false` |
 
+### showField(fieldCode, isMobile)
+Return kintone JavaScript API function according to param `isMobile` to show the target field.
+- false: `kintone.app.record.setFieldShown(fieldCode, true)`
+- true: `kintone.mobile.app.record.setFieldShown(fieldCode, true)`
+
+**Parameters**
+| Params    | Required | Type     |          |
+| --------- | -------- | -------- | -------- |
+| fieldCode | Required | String   | Field code of target field |
+| isMobile  | Optional | Boolean  | Default value: `false` |
+
 ### getDateString(format, date)
 Return a formatted date string.
 
 **Parameters**
 | Params    | Required | Type        |          |
 | --------- | -------- | ----------- | -------- |
-| format    | Optional | String      | Spacify the returned date format.</br>Default value: `'yyyymmdd'` |
-| date      | Optional | Date object | JavaScript `Date` object.</br>Default value: `new Date()` |
+| format    | Optional | String      | Spacify the returned date format. </br>Default value: `'yyyymmdd'` |
+| date      | Optional | Date object | JavaScript `Date` object. </br>Default value: `new Date()` |
 
 **Available formats**
 - `'yyyymmdd'`
